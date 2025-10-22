@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<svg width="1920" height="400" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" data-guides="{&quot;vertical&quot;:[],&quot;horizontal&quot;:[]}">
+ <title>svg</title>
+ <defs>
+  <symbol data-guides="{&quot;vertical&quot;:[],&quot;horizontal&quot;:[]}" id="svg_3" viewBox="0 0 8402.00 5954.00" xmlns="http://www.w3.org/2000/svg">
+
+   <path fill="transparent" id="svg_2" stroke="#ee0000"/>
+   <path d="m2010,5953c570.48,-962.66 1177.86,-337.99 1177.86,-337.99c0,0 578.87,675.98 1327.2,-49.55c748.33,-725.53 1716.46,0 1716.46,0c0,0 525.17,421.16 656.04,173.42c130.88,-247.74 1513.44,214.12 1513.44,214.12" fill="#ff0000" id="svg_1" stroke="#ee0000"/>
+  </symbol>
+ </defs>
+ <g class="layer">
+  <title>Layer 1</title>
+  <path fill="transparent" id="tSvg89827998cd" stroke="#ee0000"/>
+  <path d="m6,5953c750.08,-1602.63 1548.67,-562.68 1548.67,-562.68c0,0 761.11,1125.37 1745.03,-82.49c983.92,-1207.86 2256.83,0 2256.83,0c0,0 690.5,701.14 862.57,288.71c172.08,-412.44 1989.9,356.46 1989.9,356.46" fill="#ff0000" id="tSvg1186e51ff99" stroke="#ee0000"/>
+  <use id="svg_4" transform="matrix(4.46257 0 0 6.18691 -3625.92 -3816.28)" x="0" xlink:href="#svg_3" y="281.53"/>
+ </g>
+</svg>

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Héctor Quirós Pérez</title>
+        <meta charset = "UTF-8">
+        <meta name="viewport" content="width=device-width;initial-scale=1.0">
+        <style> 
+        
+        @font-face {
+            font-size: small;
+            font-family: "mifuente";
+            src: url("Cocogoose-Pro-Bold-trial.ttf"); /*CREAR VINCULO CON FUENTE EXTERNA,   TTF = TRUE TYPE FONT = Fuentes antiguas
+                                                                                            OTF = OPEN TYPE FONT = Fuentes nuevas y abiertas
+                                                                                            Woff = En desuso*/
+        }
+
+         @font-face {
+            font-family: "título";
+            src:url("Cocogoose-Pro-Thin-trial.ttf"); 
+                                                                                        
+        }
+        
+        body {
+            background-color: black;
+            font-family: título,sans-serif; /* serif, sans-serif, monospace, fantasy, cursive */
+            margin: 0;
+            padding: 0%;
+        }
+        
+        h1 {
+            font-size: 300%;
+            color: red;
+            font-family: mifuente, sans-serif ;
+        }
+
+        h2 {
+            font-size: 200%;
+            color:#FF4D4D;
+            font-style: bold;
+        }
+        
+        h3 {
+            font-size: 150%;
+            color: #FF8F8F;
+        }
+
+        h4 {
+            font-size: 150%;
+            color: #ffffff;
+            font-family: título, sans-serif;
+            font-style: bold;
+        }
+
+        header, main, footer {
+        
+            width: auto;                    /* Indica la anchura del contenedor*/
+            margin: auto;                   /*Indica los márgenes del contenedor - en este caso, centrar*/
+            padding:0%;                   /*Margenes interiores (sagnría) */
+
+        }
+        #inicio img{                    /*llama al id inicio*/
+            width: 30%;
+            
+        }
+        header {
+            text-align:center;          /*Alineación central*/
+
+        }
+        header nav ul { /*https://flexbox.jocarsa.com/*/
+            display: flex; 
+            list-style-type: none; 
+            justify-content: center;
+            padding: 0px;
+            margin: 0px; 
+            
+        }
+        
+        header nav ul li a{
+            padding:5px;                            /* Le pone una separecion entre elementos */
+            color:inherit;                          /* Le quita el color azul predeterminado */
+            text-decoration:none;                   /* Le quira el underlined */
+        }
+        
+        main img {
+            display: block;
+            margin: 0 auto;
+            margin-top: 0;
+            width: auto;                            /* o width: 100% si quieres que se expanda */
+        }
+
+        .pintura {
+            display: block;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .fondorojo {
+            
+            background-color: red;
+            margin: 0;
+            padding: 30px;
+            color:rgb(255, 255, 255);
+        }
+
+        ul {
+            display: flex;                                         /*DE IZQUIERDA A DERECHA*/
+            gap: 40px;
+        }
+        
+        ul li {
+            padding-right: 20px;                                  /* Espacio a la derecha para que no quede tan pegado el borde */
+            border-right: 1px solid rgb(255, 255, 255);         /* Barra vertical */
+        }
+
+        .contenido {
+            display:flex;
+            gap: 10px;
+
+        }
+
+        .contenido img {
+            flex:1;
+            width:50px;
+            height: 50px;
+        }
+        
+        .contenido p {
+            flex:10;
+        }
+
+        #rejilla {
+            display:grid;                                           /*CREA UNA REJILLA*/
+            grid-template-columns: auto auto auto;                  /*Hace que entre todo*/
+            gap: 20px;
+        }
+
+        #rejilla article img {
+            width:100%;
+        }
+
+        #contacto {
+            display: flex;
+            gap:20px
+        }
+
+        #contacto iframe {
+            flex:1
+        }
+
+        #contacto form {
+            display:flex;
+            flex:1;
+            flex-direction: column;
+        }
+
+        form {
+            font-size: 100%;
+            color: white;
+            font-family: mifuente, sans-serif ;
+        }
+
+        .hr {
+            padding-top: 10%;
+            padding-bottom: 10%;
+        }
+        
+
+        
+
+
+        </style>
+
+    </head>
+    <body>
+        <header>                                                            <!--Esto será la  cabecera de la página-->
+            <h1> Héctor Quirós Pérez </h1>                                  <!-- Encabezados de diferentes niveles -->
+            <h2> Técnico en Administración de sistemas y redes              <!-- La "b" de Bold es para negrita--> <!--La "U" es de Underlined--> <!--La "i" es de Italic-->
+            
+            <h3>
+            <nav>                                                           <!--Sección para la navegación-->
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#fondoacademico">Fondo académico</a></li>
+                    <li><a href="#perfilprofesional">Perfil profesional</a></li>
+                    <li><a href="#portafolio">Portafolio</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#competenciasdigitales">Competencias digiales</a></li>
+                </ul>
+                                                                            <!--Esto es para búsqueda-->
+            </nav>
+            </h3>
+            
+        </header>
+        
+        <main>
+            
+            <!-- Esto será la seccion principal-->
+            <section id="inicio">
+                <h4>Inicio</h4>
+                <img src="foto propia.jpg" alt="Héctor Quirós Pérez">
+             </section>
+            
+            <img src="svg.svg" alt="Separador de color" class="pintura" >
+            <section class="fondorojo">
+            
+            <section id="fondoacademico">
+                <h4>Fondo académico</h4>
+                <div class="contenido">
+                    <img src="Imagen de prueba">
+                    <p>ESO</p>
+                    <P>Bachillerato</P>
+                </div>
+            </section>
+            <section id="perfilprofesional">
+                <h4>Perfil profesional</h4>
+                <p>Cursando Administración de redes y sistemas con objetivos enfocados en la ciencia de datos. Mientras, formándome de lenguajes informáticos como Python.</p>
+            </section>
+            <section id="portafolio">
+                <h4>Portafolio</h4>
+                <div id="rejilla">
+                    <article>
+                        <h5>Título</h5>
+                        <p>Descripcion</p>
+                        <img src="ojo.jfif">
+                    </article>
+                    <article>
+                        <h5>Título</h5>
+                        <p>Descripcion</p>
+                        <img src="ojo.jfif">
+                    </article>
+                    <article>
+                        <h5>Título</h5>
+                        <p>Descripcion</p>
+                        <img src="ojo.jfif">
+                    </article>
+                    <article>
+                        <h5>Título</h5>
+                        <p>Descripcion</p>
+                        <img src="ojo.jfif">
+                    </article>
+                </section>
+
+
+                </p>
+            </section>                                                         
+            <hr class="linea_horizontalpersonalizada">                                          <!-- BARRA QUE SEPARA HORIZONTALMENTE (HORIZONTAL RULE)-->
+            <section id="contacto">
+                <form>
+                    <label for="nombre" >Introduce tu nombre</label><br> <!-- EL BR ES UN SALTO DE LÍNEA-->
+                    <input type="text" name="nombre" id="nombre"><br>
+
+                    <label for="email" >Introduce tu email</label><br><!-- EL BR ES UN SALTO DE LÍNEA-->
+                    <input type="email" name="email" id="email"><br>
+
+                    <label for="mensaje"> Introduce tu mensaje</label><br><!-- EL BR ES UN SALTO DE LÍNEA-->
+                    <textarea name="mensaje" id="mensaje"></textarea><br>
+
+                    <input type="submit">
+                </form>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/_LbSL3G6S6Q?si=IBovZrFPWwzzNDOe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </section>
+            <section id="competenciasdigitales">
+                <h3>Competencias digitales</h3>
+             </section>
+
+        </main>
+        <footer>
+            <!-- Esto será el pie de pagina-->
+        </footer>
+    </body>
