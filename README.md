@@ -1,19 +1,20 @@
-# Web personal en HTML y CSS
+# Web de portafolio
 
-Página personal maquetada a mano con **HTML5 y CSS3**, sin frameworks. Práctica de la asignatura *Lenguajes de Marcas* (ASIR).
+Mi web personal: quién soy, proyectos, experiencia y formación. HTML y CSS a mano, sin frameworks, publicada con GitHub Pages.
 
-## Qué incluye
+**Ver en vivo:** https://constructorqp.github.io
 
-- Cabecera con menú de navegación hecho con **Flexbox**.
-- Secciones de inicio, formación, perfil profesional y portafolio en rejilla.
-- Formulario de contacto y vídeo incrustado.
-- Separador decorativo en **SVG**.
-- Tipografía Poppins de Google Fonts.
+## Estructura
 
-## Cómo verla
+```
+.
+├── index.html                    # Portafolio
+├── assets/
+│   ├── estilo.css                # Estilos (variables CSS, grid, diseño adaptable a móvil)
+│   └── foto.jpg
+└── practica-lenguajes-marcas/    # Primera versión, hecha como práctica de Lenguajes de Marcas (ASIR)
+```
 
-Descarga el repositorio y abre `index.html` en el navegador. No necesita servidor.
+## Tecnologías
 
-## Estado
-
-Es una maqueta de práctica: algunas secciones, como el portafolio, tienen contenido de ejemplo.
+HTML5 · CSS3 (Grid, Flexbox, media queries) · Google Fonts · GitHub Pages

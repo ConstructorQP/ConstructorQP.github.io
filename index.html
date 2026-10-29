@@ -1,264 +1,128 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <title>Héctor Quirós Pérez</title>
-        <meta charset = "UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;800&display=swap" rel="stylesheet">
-        <style> 
-        
-        /* Fuentes: Poppins (Google Fonts, licencia libre OFL) */
-        body {
-            background-color: black;
-            font-family: "Poppins", sans-serif; font-weight: 200; /* serif, sans-serif, monospace, fantasy, cursive */
-            margin: 0;
-            padding: 0%;
-        }
-        
-        h1 {
-            font-size: 300%;
-            color: red;
-            font-family: "Poppins", sans-serif; font-weight: 800;
-        }
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Héctor Quirós Pérez | Sistemas y redes</title>
+  <meta name="description" content="Portafolio de Héctor Quirós Pérez, estudiante de ASIR orientado a administración de sistemas, redes y ciberseguridad.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/estilo.css">
+</head>
+<body>
+  <header class="cabecera">
+    <nav class="menu contenedor">
+      <span class="logo">hqp</span>
+      <ul>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#experiencia">Experiencia</a></li>
+        <li><a href="#formacion">Formación</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
 
-        h2 {
-            font-size: 200%;
-            color:#FF4D4D;
-            font-style: bold;
-        }
-        
-        h3 {
-            font-size: 150%;
-            color: #FF8F8F;
-        }
+    <section class="hero contenedor">
+      <img src="assets/foto.jpg" alt="Héctor Quirós Pérez" class="foto">
+      <div>
+        <p class="etiqueta">Estudiante de 2º de ASIR · Valencia</p>
+        <h1>Héctor Quirós Pérez</h1>
+        <p class="lema">Administración de sistemas Linux y Windows, redes y virtualización. Orientado a ciberseguridad.</p>
+        <div class="botones">
+          <a class="boton" href="https://github.com/ConstructorQP">GitHub</a>
+          <a class="boton secundario" href="https://www.linkedin.com/in/h%C3%A9ctor-quir%C3%B3s-p%C3%A9rez-a8a136398/">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </header>
 
-        h4 {
-            font-size: 150%;
-            color: #ffffff;
-            font-family: "Poppins", sans-serif; font-weight: 400;
-            font-style: bold;
-        }
+  <main>
+    <section class="contenedor bloque">
+      <h2>Sobre mí</h2>
+      <p>Estudio el ciclo de Administración de Sistemas Informáticos en Red en CEAC Burjassot y he trabajado como técnico de sistemas en UNSISTEMA IT Solutions. Me gusta montar infraestructura y entender cómo funciona por dentro: dominios, servicios de red, contenedores y virtualización. Documento mis prácticas en GitHub y busco prácticas o un primer puesto en sistemas o soporte.</p>
+    </section>
 
-        header, main, footer {
-        
-            width: auto;                    /* Indica la anchura del contenedor*/
-            margin: auto;                   /*Indica los márgenes del contenedor - en este caso, centrar*/
-            padding:0%;                   /*Margenes interiores (sagnría) */
+    <section id="proyectos" class="contenedor bloque">
+      <h2>Proyectos</h2>
+      <div class="rejilla">
+        <a class="tarjeta" href="https://github.com/ConstructorQP/docker-web-uptime-kuma">
+          <h3>Web en Docker con monitorización</h3>
+          <p>Nginx en un contenedor propio, vigilado por Uptime Kuma y gestionado con Docker Compose y Portainer.</p>
+          <span class="tags">Docker · Compose · Uptime Kuma · Portainer</span>
+        </a>
+        <a class="tarjeta" href="https://github.com/ConstructorQP/samba-active-directory">
+          <h3>Active Directory con Samba</h3>
+          <p>Controlador de dominio en Ubuntu Server con DNS integrado, Kerberos, usuarios y grupos.</p>
+          <span class="tags">Samba · Kerberos · DNS · Ubuntu Server</span>
+        </a>
+        <a class="tarjeta" href="https://github.com/ConstructorQP/proxmox-virtualizacion">
+          <h3>Laboratorio con Proxmox VE</h3>
+          <p>Virtualización anidada, máquinas virtuales Debian, contenedores LXC e instantáneas.</p>
+          <span class="tags">Proxmox · KVM · LXC</span>
+        </a>
+        <a class="tarjeta" href="https://github.com/ConstructorQP/dhcp-linux-windows-server">
+          <h3>DHCP en Linux y Windows Server</h3>
+          <p>isc-dhcp-server en Ubuntu y rol DHCP en Windows Server con ámbito, exclusiones y opciones.</p>
+          <span class="tags">DHCP · Netplan · PowerShell</span>
+        </a>
+        <a class="tarjeta" href="https://github.com/ConstructorQP/flask-microsaas">
+          <h3>Panel de gestión en Flask</h3>
+          <p>Clientes, productos y pedidos con login, contraseñas con hash y exportación a Excel y PDF.</p>
+          <span class="tags">Python · Flask · SQLite</span>
+        </a>
+        <a class="tarjeta" href="https://github.com/ConstructorQP/scripts-powershell">
+          <h3>Scripts de PowerShell</h3>
+          <p>30 scripts para administrar Windows: procesos, servicios, usuarios, logs e informes de recursos.</p>
+          <span class="tags">PowerShell · Windows</span>
+        </a>
+      </div>
+      <p class="mas"><a href="https://github.com/ConstructorQP?tab=repositories">Ver todos los repositorios</a></p>
+    </section>
 
-        }
-        #inicio img{                    /*llama al id inicio*/
-            width: 30%;
-            
-        }
-        header {
-            text-align:center;          /*Alineación central*/
+    <section id="experiencia" class="contenedor bloque">
+      <h2>Experiencia</h2>
+      <article class="linea">
+        <div class="fecha">abr. 2026 – sept. 2026</div>
+        <div>
+          <h3>Técnico de sistemas · UNSISTEMA IT Solutions</h3>
+          <ul>
+            <li>Administración y mantenimiento de servidores Windows y equipos de clientes.</li>
+            <li>Instalación y configuración de redes y sistemas de videovigilancia.</li>
+            <li>Configuración de routers MikroTik (RouterOS) para sucursales.</li>
+            <li>Gestión de incidencias, soporte a usuarios y reparación de hardware.</li>
+          </ul>
+        </div>
+      </article>
+    </section>
 
-        }
-        header nav ul { /*https://flexbox.jocarsa.com/*/
-            display: flex; 
-            list-style-type: none; 
-            justify-content: center;
-            padding: 0px;
-            margin: 0px; 
-            
-        }
-        
-        header nav ul li a{
-            padding:5px;                            /* Le pone una separecion entre elementos */
-            color:inherit;                          /* Le quita el color azul predeterminado */
-            text-decoration:none;                   /* Le quira el underlined */
-        }
-        
-        main img {
-            display: block;
-            margin: 0 auto;
-            margin-top: 0;
-            width: auto;                            /* o width: 100% si quieres que se expanda */
-        }
+    <section id="formacion" class="contenedor bloque">
+      <h2>Formación</h2>
+      <article class="linea">
+        <div class="fecha">2025 – 2027</div>
+        <div><h3>CFGS Administración de Sistemas Informáticos en Red</h3><p>CEAC Burjassot</p></div>
+      </article>
+      <article class="linea">
+        <div class="fecha">2018 – 2022</div>
+        <div><h3>Bachillerato</h3><p>IES Riu Túria</p></div>
+      </article>
+    </section>
 
-        .pintura {
-            display: block;
-            width: 100%;
-            margin: 0;
-            padding: 0;
-        }
+    <section class="contenedor bloque">
+      <h2>Tecnologías</h2>
+      <ul class="chips">
+        <li>Linux</li><li>Windows Server</li><li>Active Directory</li><li>Samba</li><li>Docker</li><li>Proxmox</li>
+        <li>VirtualBox</li><li>DHCP / DNS</li><li>MikroTik</li><li>Bash</li><li>PowerShell</li><li>Python</li>
+        <li>SQL</li><li>Nginx / Apache</li><li>Grafana</li>
+      </ul>
+    </section>
+  </main>
 
-        .fondorojo {
-            
-            background-color: red;
-            margin: 0;
-            padding: 30px;
-            color:rgb(255, 255, 255);
-        }
-
-        ul {
-            display: flex;                                         /*DE IZQUIERDA A DERECHA*/
-            gap: 40px;
-        }
-        
-        ul li {
-            padding-right: 20px;                                  /* Espacio a la derecha para que no quede tan pegado el borde */
-            border-right: 1px solid rgb(255, 255, 255);         /* Barra vertical */
-        }
-
-        .contenido {
-            display:flex;
-            gap: 10px;
-
-        }
-
-        .contenido img {
-            flex:1;
-            width:50px;
-            height: 50px;
-        }
-        
-        .contenido p {
-            flex:10;
-        }
-
-        #rejilla {
-            display:grid;                                           /*CREA UNA REJILLA*/
-            grid-template-columns: auto auto auto;                  /*Hace que entre todo*/
-            gap: 20px;
-        }
-
-        #rejilla article img {
-            width:100%;
-        }
-
-        #contacto {
-            display: flex;
-            gap:20px
-        }
-
-        #contacto iframe {
-            flex:1
-        }
-
-        #contacto form {
-            display:flex;
-            flex:1;
-            flex-direction: column;
-        }
-
-        form {
-            font-size: 100%;
-            color: white;
-            font-family: "Poppins", sans-serif; font-weight: 800;
-        }
-
-        .hr {
-            padding-top: 10%;
-            padding-bottom: 10%;
-        }
-        
-
-        
-
-
-        .menu {
-            font-size: 150%;
-            color: #FF8F8F;
-            font-weight: bold;
-        }
-        </style>
-
-    </head>
-    <body>
-        <header>                                                            <!--Esto será la  cabecera de la página-->
-            <h1> Héctor Quirós Pérez </h1>                                  <!-- Encabezados de diferentes niveles -->
-            <h2> Técnico en Administración de sistemas y redes</h2>             <!-- La "b" de Bold es para negrita--> <!--La "U" es de Underlined--> <!--La "i" es de Italic-->
-            
-            <div class="menu">
-            <nav>                                                           <!--Sección para la navegación-->
-                <ul>
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#fondoacademico">Fondo académico</a></li>
-                    <li><a href="#perfilprofesional">Perfil profesional</a></li>
-                    <li><a href="#portafolio">Portafolio</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                    <li><a href="#competenciasdigitales">Competencias digitales</a></li>
-                </ul>
-                                                                            <!--Esto es para búsqueda-->
-            </nav>
-            </div>
-            
-        </header>
-        
-        <main>
-            
-            <!-- Esto será la seccion principal-->
-            <section id="inicio">
-                <h4>Inicio</h4>
-                <img src="foto propia.jpg" alt="Héctor Quirós Pérez">
-             </section>
-            
-            <img src="svg.svg" alt="Separador de color" class="pintura" >
-            <section class="fondorojo">
-            
-            <section id="fondoacademico">
-                <h4>Fondo académico</h4>
-                <div class="contenido">
-                    <p>ESO</p>
-                    <P>Bachillerato</P>
-                </div>
-            </section>
-            <section id="perfilprofesional">
-                <h4>Perfil profesional</h4>
-                <p>Cursando Administración de redes y sistemas con objetivos enfocados en la ciencia de datos. Mientras, formándome de lenguajes informáticos como Python.</p>
-            </section>
-            <section id="portafolio">
-                <h4>Portafolio</h4>
-                <div id="rejilla">
-                    <article>
-                        <h5>Título</h5>
-                        <p>Descripcion</p>
-                        <img src="ojo.jfif" alt="Imagen del proyecto">
-                    </article>
-                    <article>
-                        <h5>Título</h5>
-                        <p>Descripcion</p>
-                        <img src="ojo.jfif" alt="Imagen del proyecto">
-                    </article>
-                    <article>
-                        <h5>Título</h5>
-                        <p>Descripcion</p>
-                        <img src="ojo.jfif" alt="Imagen del proyecto">
-                    </article>
-                    <article>
-                        <h5>Título</h5>
-                        <p>Descripcion</p>
-                        <img src="ojo.jfif" alt="Imagen del proyecto">
-                    </article>
-                </div>
-            </section>
-            </section>                                                         
-            <hr class="linea_horizontalpersonalizada">                                          <!-- BARRA QUE SEPARA HORIZONTALMENTE (HORIZONTAL RULE)-->
-            <section id="contacto">
-                <form>
-                    <label for="nombre" >Introduce tu nombre</label><br> <!-- EL BR ES UN SALTO DE LÍNEA-->
-                    <input type="text" name="nombre" id="nombre"><br>
-
-                    <label for="email" >Introduce tu email</label><br><!-- EL BR ES UN SALTO DE LÍNEA-->
-                    <input type="email" name="email" id="email"><br>
-
-                    <label for="mensaje"> Introduce tu mensaje</label><br><!-- EL BR ES UN SALTO DE LÍNEA-->
-                    <textarea name="mensaje" id="mensaje"></textarea><br>
-
-                    <input type="submit">
-                </form>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/_LbSL3G6S6Q?si=IBovZrFPWwzzNDOe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </section>
-            <section id="competenciasdigitales">
-                <h3>Competencias digitales</h3>
-             </section>
-
-        </main>
-        <footer>
-            <!-- Esto será el pie de pagina-->
-        </footer>
-    </body>
+  <footer id="contacto" class="pie">
+    <div class="contenedor">
+      <h2>Contacto</h2>
+      <p><a href="mailto:constructorqp@gmail.com">constructorqp@gmail.com</a></p>
+      <p class="idiomas">Español nativo · Inglés B2 · Valenciano B2</p>
+    </div>
+  </footer>
+</body>
 </html>
